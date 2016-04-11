@@ -1,0 +1,23 @@
+{
+    "name": "cwbit/cakephp-markdown",
+    "description": "View Helper for Cake 3.x that enables parsing Markdown into HTML",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0",
+        "erusev/parsedown" : "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Markdown\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Markdown\\Test\\": "tests"
+        }
+    }
+}
