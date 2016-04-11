@@ -3,7 +3,7 @@
 namespace Markdown\View\Helper;
 
 use Cake\View\Helper;
-use Parsedown\Parsedown;
+use Parsedown;
 
 class MarkdownHelper extends Helper
 {
