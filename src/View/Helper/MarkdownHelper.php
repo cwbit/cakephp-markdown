@@ -3,7 +3,7 @@
 namespace Markdown\View\Helper;
 
 use Cake\View\Helper;
-use Parsedown;
+use Markdown\Engine\Markdown;
 
 class MarkdownHelper extends Helper
 {
@@ -14,7 +14,6 @@ class MarkdownHelper extends Helper
      */
     public function toHtml($markdown)
     {
-        $engine = new Parsedown();
-        return $engine->text($markdown);
+        return Markdown::toHtml($markdown);
     }
 }
