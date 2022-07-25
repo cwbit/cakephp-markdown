@@ -1,5 +1,5 @@
 # cakephp-markdown
-View Helper Plugin for CakePHP 3.x that enables conversion of Markdown into HTML
+View Helper Plugin for CakePHP 4.x that enables conversion of Markdown into HTML
 
 ***WHY?***
 
@@ -11,8 +11,8 @@ Just add the `Markdown.Markdown` Helper to your view and use it. Easy peasy.
 
 ## Requirements
 
-* PHP 5.4+
-* [CakePHP 3.x](http://cakephp.org)
+* PHP 7.2+
+* [CakePHP 4.x](https://cakephp.org)
 * [erusev/Parsedown](https://github.com/erusev/parsedown)
 
 ## TOC
@@ -25,7 +25,7 @@ Just add the `Markdown.Markdown` Helper to your view and use it. Easy peasy.
 This plugin is on Packagist which means it can be easily installed with Composer.
 
 ```
-composer require cwbit/cakephp-markdown "~1.0"
+composer require cwbit/cakephp-markdown "~2.0"
 ```
 Then simply load the plugin normally in your `config/bootstrap.php` file
 

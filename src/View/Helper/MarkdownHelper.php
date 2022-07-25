@@ -9,11 +9,12 @@ class MarkdownHelper extends Helper
 {
     /**
      * Takes a string of markdown-formatted text and returns it as formatted HTML
-     * @param $markdown string of markdown-formatted text
+     *
+     * @param string|null $markdown string of markdown-formatted text
      * @return string of HTML
      */
-    public function toHtml($markdown)
+    public function toHtml(?string $markdown): string
     {
-        return Markdown::toHtml($markdown);
+        return Markdown::toHtml((string)$markdown);
     }
 }

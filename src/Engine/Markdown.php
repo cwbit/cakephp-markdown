@@ -6,7 +6,7 @@ use Parsedown;
 
 class Markdown
 {
-  public static function toHtml($text)
+  public static function toHtml(string $text): string
   {
     return (new Parsedown())->text($text);
   }
