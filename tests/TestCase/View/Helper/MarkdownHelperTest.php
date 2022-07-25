@@ -2,15 +2,15 @@
 
 namespace Markdown\Test\TestCase\View\Helper;
 
-use Markdown\View\Helper\MarkdownHelper;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
+use Markdown\View\Helper\MarkdownHelper;
 
 class MarkdownHelperTest extends TestCase
 {
   public $helper = null;
 
-  public function setUp()
+  public function setUp(): void
   {
     parent::setUp();
     $view = new View();
@@ -22,6 +22,7 @@ class MarkdownHelperTest extends TestCase
     $this->assertEquals("<p>This is <strong>bold</strong></p>", $this->helper->toHtml('This is **bold**'));
     $this->assertEquals("<p>This is <em>italic</em></p>", $this->helper->toHtml('This is *italic*'));
     $this->assertEquals("<p>This is plain</p>", $this->helper->toHtml('This is plain'));
+    $this->assertEquals('', $this->helper->toHtml(null));
   }
 
   public function testMultiLineToHtml()
